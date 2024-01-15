@@ -17,12 +17,12 @@ test:
 .PHONY: .lint
 .lint:
 	$(info Running lint...)
-	$(LINT_BIN) run --new-from-rev=origin/master --config=.golangci.pipeline.yaml ./...
+	$(LINT_BIN) run --new-from-rev=origin/master --config=.golangci.yaml ./...
 
 .PHONY: .lint-full
 .lint-full:
 	$(info Running lint-full...)
-	$(LINT_BIN) run --config=.golangci.pipeline.yaml ./...
+	$(LINT_BIN) run --config=.golangci.yaml ./...
 
 .PHONY: lint
 lint: install-lint .lint
