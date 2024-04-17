@@ -20,7 +20,7 @@ type redisClient struct {
 	codec     codec.Codec
 }
 
-func New(cache redis.Cmdable, prefixKey string, ttl time.Duration, opts ...Options) cache.Store {
+func NewClient(cache redis.Cmdable, prefixKey string, ttl time.Duration, opts ...Options) cache.Store {
 	settings := cacheOptions{}
 
 	for _, o := range opts {
