@@ -15,7 +15,7 @@ type localCache struct {
 	cache simplelru.LRUCache[string, any]
 }
 
-func New(name string, cap int, ttl time.Duration) (cache.Store, error) {
+func NewClient(name string, cap int, ttl time.Duration) (cache.Store, error) {
 	if cap <= 0 {
 		return nil, fmt.Errorf("can't create cache %s: wrong capacity, it should be positive", name)
 	}
