@@ -60,6 +60,10 @@ func SetLogger(l *zap.SugaredLogger) {
 	global = l
 }
 
+func GetLogger() *zap.SugaredLogger {
+	return global
+}
+
 func Debug(ctx context.Context, args ...interface{}) {
 	fromContext(ctx).Debug(args...)
 }
