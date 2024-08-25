@@ -6,11 +6,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/bsm/redislock"
-	"github.com/redis/go-redis/v9"
-
 	"github.com/Format-C-eft/utils/dlock"
 	"github.com/Format-C-eft/utils/logger"
+	"github.com/bsm/redislock"
+	"github.com/redis/go-redis/v9"
 )
 
 type dLockRedis struct {

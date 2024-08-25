@@ -30,7 +30,7 @@ lint: install-lint .lint
 .PHONY: lint-full
 lint-full: install-lint .lint-full
 
-LINT_TAG ?= 1.55.2
+LINT_TAG ?= 1.57.2
 install-lint: export GOBIN := $(LOCAL_BIN)
 install-lint:
 	$(info Installing golangci-lint v$(LINT_TAG))

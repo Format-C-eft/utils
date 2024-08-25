@@ -1,10 +1,9 @@
 package middleware
 
 import (
-	"github.com/gin-gonic/gin"
-
 	"github.com/Format-C-eft/utils/headers"
 	"github.com/Format-C-eft/utils/logger"
+	"github.com/gin-gonic/gin"
 )
 
 func ChangeLoggerLevel() gin.HandlerFunc {

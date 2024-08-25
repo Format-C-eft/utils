@@ -5,9 +5,9 @@ import (
 	"fmt"
 )
 
-type Json struct{}
+type JSON struct{}
 
-func (Json) Marshal(in interface{}) ([]byte, error) {
+func (JSON) Marshal(in interface{}) ([]byte, error) {
 	marshaller, ok := in.(json.Marshaler)
 	if ok {
 		val, err := marshaller.MarshalJSON()
@@ -24,7 +24,7 @@ func (Json) Marshal(in interface{}) ([]byte, error) {
 	return val, nil
 }
 
-func (Json) Unmarshal(p []byte, dst interface{}) error {
+func (JSON) Unmarshal(p []byte, dst interface{}) error {
 	unmarshaler, ok := dst.(json.Unmarshaler)
 	if ok {
 		err := unmarshaler.UnmarshalJSON(p)

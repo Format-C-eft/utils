@@ -5,10 +5,9 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/Format-C-eft/utils/cache"
 	lruExp "github.com/hashicorp/golang-lru/v2/expirable"
 	"github.com/hashicorp/golang-lru/v2/simplelru"
-
-	"github.com/Format-C-eft/utils/cache"
 )
 
 type localCache struct {

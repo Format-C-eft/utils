@@ -10,7 +10,7 @@ require (
 	github.com/jackc/pgx/v5 v5.6.0
 	github.com/json-iterator/go v1.1.12
 	github.com/m1/go-generate-password v0.2.0
-	github.com/redis/go-redis/v9 v9.5.3
+	github.com/redis/go-redis/v9 v9.6.1
 	github.com/stretchr/testify v1.9.0
 	go.uber.org/zap v1.27.0
 )

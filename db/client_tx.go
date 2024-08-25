@@ -13,8 +13,8 @@ type connAdapterTx struct {
 	client pgx.Tx
 }
 
-func (a *connAdapterTx) Get(ctx context.Context, dest interface{}, sqlizer Squirrel) error {
-	query, args, err := sqlizer.ToSql()
+func (a *connAdapterTx) Get(ctx context.Context, dest interface{}, sq Squirrel) error {
+	query, args, err := sq.ToSql()
 	if err != nil {
 		return fmt.Errorf("sq.ToSql err: %w", err)
 	}

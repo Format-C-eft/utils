@@ -3,9 +3,8 @@ package middleware
 import (
 	"time"
 
-	"github.com/gin-gonic/gin"
-
 	"github.com/Format-C-eft/utils/logger"
+	"github.com/gin-gonic/gin"
 )
 
 func Logger() gin.HandlerFunc {

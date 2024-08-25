@@ -15,7 +15,7 @@ func TestWrapperJSON(t *testing.T) {
 
 	wr := NewWrapped(
 		func() interface{} { return &testType{} },
-		Json{},
+		JSON{},
 	)
 
 	testStruct := testType{

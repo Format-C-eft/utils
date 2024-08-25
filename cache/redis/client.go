@@ -7,10 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/redis/go-redis/v9"
-
 	"github.com/Format-C-eft/utils/cache"
 	"github.com/Format-C-eft/utils/cache/codec"
+	"github.com/redis/go-redis/v9"
 )
 
 type redisClient struct {
